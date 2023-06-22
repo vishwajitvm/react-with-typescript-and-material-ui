@@ -1,5 +1,5 @@
 import React from 'react'
-import { Stack, Button, IconButton } from '@mui/material'
+import { Stack, Button, ButtonGroup } from '@mui/material'
 import SendIcon from '@mui/icons-material/Send';
 
 const MuiButtonsComponent = () => {
@@ -40,7 +40,28 @@ const MuiButtonsComponent = () => {
         <Button variant='contained' color='success' size='small' >Small</Button>
       </Stack>
 
+      {/*  Button Group Usage */}
+      <Stack display='block' spacing={2} direction='row'>
+        <ButtonGroup variant='outlined'>
+      <Button >Left</Button>
+      <Button >Middle</Button>
+      <Button >Right</Button>
+      </ButtonGroup>
 
+      <ButtonGroup variant='text'>
+      <Button >Left</Button>
+      <Button >Middle</Button>
+      <Button >Right</Button>
+      </ButtonGroup>
+
+      <ButtonGroup variant='text' orientation='vertical'>
+      <Button >Left</Button>
+      <Button >Middle</Button>
+      <Button >Right</Button>
+      </ButtonGroup>
+
+
+      </Stack>
     </Stack>
   )
 }
